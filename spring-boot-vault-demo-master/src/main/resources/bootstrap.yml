@@ -1,0 +1,12 @@
+spring.application.name: hello-vault
+spring.cloud.vault:
+  host: vault
+  port: 8200
+  scheme: https
+  authentication: approle
+  ssl:
+    trust-store: vault-truststore.jks
+    trust-store-password: s3cr3t
+  database:
+    enabled: true
+    role: springdemo
